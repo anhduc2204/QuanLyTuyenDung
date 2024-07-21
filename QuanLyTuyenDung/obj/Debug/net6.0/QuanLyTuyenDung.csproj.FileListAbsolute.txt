@@ -67,3 +67,4 @@ D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\refi
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.pdb
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.genruntimeconfig.cache
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\ref\QuanLyTuyenDung.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.sourcelink.json

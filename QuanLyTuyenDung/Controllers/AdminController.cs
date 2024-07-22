@@ -29,5 +29,11 @@ namespace QuanLyTuyenDung.Controllers
             return View("~/Views/Admin/QuanLyViecLam.cshtml");
         }
 
+        [HttpGet]
+        [Route("ThemViecLam")]
+        public IActionResult ThemViecLam()
+        {
+            return View("~/Views/Admin/ThemViecLam.cshtml");
+        }
     }
 }

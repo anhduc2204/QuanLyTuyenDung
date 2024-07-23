@@ -24,10 +24,16 @@
 
   <ItemGroup>
     <Folder Include="Utils\" />
+<<<<<<< HEAD
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\TaiKhoan\" />
+    <Folder Include="Views\UngTuyen\" />
+=======
 	<Folder Include="Views\TaiKhoan\" />
     <Folder Include="Views\TuyenDung\" />
     <Folder Include="Views\UngTuyen\" />
 	<Folder Include="Views\TaiKhoan\" />
+>>>>>>> main
   </ItemGroup>
 
 </Project>

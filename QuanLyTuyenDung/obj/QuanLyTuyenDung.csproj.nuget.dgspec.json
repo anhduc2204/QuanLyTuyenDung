@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
+    "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
+    "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "projectUniqueName": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
         "projectName": "QuanLyTuyenDung",
-        "projectPath": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
-        "packagesPath": "C:\\Users\\LE SANG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
+        "projectPath": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "packagesPath": "C:\\Users\\ACER NITRO\\.nuget\\packages\\",
+        "outputPath": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LE SANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER NITRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,52 +39,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.31, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.31, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.31, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.31, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

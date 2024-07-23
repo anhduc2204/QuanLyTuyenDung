@@ -2,11 +2,14 @@
 
 @{
     ViewData["Title"] = "Thêm tin tuyển dụng";
+     string formAction = Model.ProjectId == 0 ? "ThemViecLam" : "CapNhatViecLam";
+    string titleForm  = Model.ProjectId == 0 ? "Thêm việc làm mới" : "Cập nhật việc làm";
 }
 
+
 <main>
-    <h1 class="main-title">Thêm việc làm mới</h1>
-    <form asp-action="ThemViecLam" class="job-form">
+    <h1 class="main-title">@titleForm</h1>
+    <form asp-action="@formAction" class="job-form">
         
         <div class="form-group">
             <label for="title" class="form-label">Tiêu đề</label>
@@ -43,7 +46,7 @@
             </select>
         </div>
         <div class="submit-container">
-            <button type="submit" class="submit-button">Thêm mới</button>
+            <button type="submit" class="submit-button">Xác nhận</button>
         </div>
     </form>
 </main>

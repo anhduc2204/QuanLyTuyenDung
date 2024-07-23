@@ -36,11 +36,32 @@ namespace QuanLyTuyenDung.Controllers
             return View("~/Views/Admin/ThemViecLam.cshtml");
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("CapNhatViecLam")]
-        public IActionResult CapNhatViecLam()
+        public async Task<IActionResult> CapNhatViecLam(ViecLamViewModel model)
         {
-            return View("~/Views/Admin/CapNhatViecLam.cshtml");
+            if (!ModelState.IsValid || model.NgayHetHan <= model.NgayTao)
+            {
+                if (model.NgayHetHan <= model.NgayTao)
+                {
+                    ModelState.AddModelError("NgayHetHan", "Ngày hết hạn phải lớn hơn ngày tạo");
+                    return View(model);
+                }
+            }
+
+            var viecLam = new ViecLam
+            {
+                MaViecLam = model.MaViecLam,
+                TieuDe = model.TieuDe,
+                MoTa = model.MoTa,
+                MucLuong = model.MucLuong,
+                NgayTao = model.NgayTao,
+                NgayHetHan = model.NgayHetHan,
+                TrangThai = Convert.ToBoolean(model.TrangThai)
+            };
+
+            await _ViecLamdao.Update(viecLam);
+            return RedirectToAction("QuanLyViecLam");
         }
     }
 }

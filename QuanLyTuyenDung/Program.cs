@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using QuanLyTuyenDung.DAO;
 using QuanLyTuyenDung.Models;
+using QuanLyTuyenDung.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,6 @@ builder.Services.AddDbContext<DataContext>(option =>
 {
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
-
 
 builder.Services.AddScoped<ViecLamDAO>(); //Đăng kí DAO
 builder.Services.AddScoped<NguoiDungDAO>();

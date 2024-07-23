@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <Folder Include="Utils\" />
+    <Folder Include="Views\TaiKhoan\" />
     <Folder Include="Views\TuyenDung\" />
     <Folder Include="Views\UngTuyen\" />
   </ItemGroup>

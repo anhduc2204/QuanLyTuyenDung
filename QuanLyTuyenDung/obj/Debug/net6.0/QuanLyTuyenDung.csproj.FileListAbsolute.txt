@@ -68,3 +68,8 @@ D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\Quan
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.genruntimeconfig.cache
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\ref\QuanLyTuyenDung.dll
 D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.sourcelink.json
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

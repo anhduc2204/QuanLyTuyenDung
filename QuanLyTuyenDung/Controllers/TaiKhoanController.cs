@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using QLTuyenDung.DAO;
-using QLTuyenDung.Models;
+using QuanLyTuyenDung.DAO;
+using QuanLyTuyenDung.Models;
 using Newtonsoft.Json;
-using QLTuyenDung.Models.ViewModels;
+using QuanLyTuyenDung.Models.ViewModels;
+using QLTuyenDung.DAO;
 
 namespace QLTuyenDung.Controllers
 {

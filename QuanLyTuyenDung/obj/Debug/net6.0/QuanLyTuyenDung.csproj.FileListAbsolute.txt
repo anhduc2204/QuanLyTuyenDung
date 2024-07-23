@@ -137,3 +137,15 @@ D:\Nam 4\HK 1\Nhap Mon CNPM\Project\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\ne
 D:\Nam 4\HK 1\Nhap Mon CNPM\Project\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.pdb
 D:\Nam 4\HK 1\Nhap Mon CNPM\Project\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.genruntimeconfig.cache
 D:\Nam 4\HK 1\Nhap Mon CNPM\Project\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\ref\QuanLyTuyenDung.dll
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.csproj.AssemblyReference.cache
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.AssemblyInfoInputs.cache
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.AssemblyInfo.cs
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.csproj.CoreCompileInputs.cache
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.RazorAssemblyInfo.cache
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.RazorAssemblyInfo.cs
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.sourcelink.json
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.dll
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\refint\QuanLyTuyenDung.dll
+C:\Users\LE SANG\Source\Repos\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.pdb

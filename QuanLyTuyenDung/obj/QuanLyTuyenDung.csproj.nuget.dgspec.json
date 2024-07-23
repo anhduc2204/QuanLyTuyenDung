@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
+    "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
+    "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "projectUniqueName": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
         "projectName": "QuanLyTuyenDung",
-        "projectPath": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
-        "packagesPath": "C:\\Users\\LE SANG\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LE SANG\\Source\\Repos\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
+        "projectPath": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LE SANG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -84,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

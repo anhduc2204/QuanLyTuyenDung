@@ -1,0 +1,58 @@
+﻿
+@model QuanLyTuyenDung.Models.ViewModels.QuanLyUngTuyenViewModel
+@{
+    ViewData["Title"] = "Quản lý ứng tuyển";
+    int stt = 1;
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<style>
+    .btn-custom {
+        background-color: #ff7f50; /* Màu cam đậm */
+        color: #fff; /* Màu chữ trắng */
+        border-color: #ff7f50; /* Màu viền */
+    }
+
+        .btn-custom:hover {
+            background-color: #e65c00; /* Màu cam sáng khi hover */
+            border-color: #e65c00; /* Màu viền khi hover */
+            color: #fff; /* Màu chữ trắng khi hover */
+        }
+</style>
+
+<main class="py-4">
+    <section class="job-list">
+        <div class="container">
+            <h1 class="text-center mb-4">Quản lý ứng tuyển cho từng việc làm</h1>
+            <p>Tuyển dụng: </p>
+            <p>Mô tả:</p>
+            <span>Mức lương: </span>
+
+
+            <div class="create-job text-center mb-4">
+                <p>Danh sách ứng tuyển</p>
+            </div>
+
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên </th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Ngày sinh</th>
+                        <th>Mô tả ứng viên</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+

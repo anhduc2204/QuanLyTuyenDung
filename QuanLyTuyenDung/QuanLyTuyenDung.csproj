@@ -22,9 +22,9 @@
 
   <ItemGroup>
     <Folder Include="Utils\" />
+    <Folder Include="Views\TaiKhoan\" />
     <Folder Include="Views\UngTuyen\" />
     <Folder Include="Views\TuyenDung\" />
-    <Folder Include="Views\TaiKhoan\" />
   </ItemGroup>
 
 </Project>

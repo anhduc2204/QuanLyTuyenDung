@@ -15,16 +15,16 @@ namespace QuanLyTuyenDung.Models
         public string TenND { set; get; }
 
         [Column("sEmail"), Required, StringLength(50)]
-        public string Email {set; get;}
+        public string Email { set; get; }
 
         [Column("sSDT"), StringLength(15)]
-        public string? SDT {  set; get; }
+        public string? SDT { set; get; }
 
         [Column("dNgaySinh")]
         public DateTime? NgaySinh { set; get; }
 
         [Column("sGioiTinh"), StringLength(10)]
-        public string? GioiTinh {  set; get; }
+        public string? GioiTinh { set; get; }
 
         public int iMaTaiKhoan { get; set; }
 

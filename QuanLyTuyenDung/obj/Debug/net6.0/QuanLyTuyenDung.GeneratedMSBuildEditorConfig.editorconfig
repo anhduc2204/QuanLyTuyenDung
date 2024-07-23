@@ -16,14 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Nam 4\HK 1\Nhap Mon CNPM\Project\QuanLyTuyenDung\QuanLyTuyenDung
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/Admin/QuanLyViecLam.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUXVhbkx5VmllY0xhbS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/Admin/ThemViecLam.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGhlbVZpZWNMYW0uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +26,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/DonUngTuyen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXERvblVuZ1R1eWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/QuanLyViecLam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFF1YW5MeVZpZWNMYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ThemViecLam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFRoZW1WaWVjTGFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Nam 4/HK 1/Nhap Mon CNPM/Project/QuanLyTuyenDung/QuanLyTuyenDung/Views/_ViewImports.cshtml]

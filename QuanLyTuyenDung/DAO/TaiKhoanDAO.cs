@@ -1,6 +1,6 @@
 ﻿namespace QuanLyTuyenDung.DAO
 {
-	public class TaiKhoanDAO
-	{
-	}
+    public class TaiKhoanDAO
+    {
+    }
 }

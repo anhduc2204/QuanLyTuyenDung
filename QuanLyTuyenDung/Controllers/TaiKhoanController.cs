@@ -3,16 +3,11 @@ using QuanLyTuyenDung.DAO;
 using QuanLyTuyenDung.Models;
 using Newtonsoft.Json;
 using QuanLyTuyenDung.Models.ViewModels;
-using QuanLyTuyenDung.DAO;
 
 namespace QuanLyTuyenDung.Controllers
 {
     public class TaiKhoanController : Controller
     {
-        /*public IActionResult Index()
-        {
-            return View();
-        }*/
 
         private readonly NguoiDungDAO _NDdao;
         private readonly TaiKhoanDAO _TaiKhoanDAO;
@@ -22,6 +17,7 @@ namespace QuanLyTuyenDung.Controllers
             _NDdao = nguoiDungDAO;
             _TaiKhoanDAO = taiKhoanDAO;
         }
+
 
         [HttpGet]
         public IActionResult Login()

@@ -2,7 +2,6 @@
 using QuanLyTuyenDung.DAO;
 using QuanLyTuyenDung.Models.ViewModels;
 using QuanLyTuyenDung.Models;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace QuanLyTuyenDung.Controllers
 {

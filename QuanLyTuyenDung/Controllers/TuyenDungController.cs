@@ -52,12 +52,40 @@ namespace QuanLyTuyenDung.Controllers
             var dsViecLam = await _viecLamDAO.GetAll();
             return View(dsViecLam);
         }
-        //Them Viec Lam
+
+
+        //Get Them Viec Lam
         [HttpGet]
         [Route("ThemViecLam")]
         public IActionResult ThemViecLam()
         {
             return View();
+        }
+
+        [HttpPost]
+        [Route("ThemViecLam")]
+        public async Task<IActionResult> ThemViecLam(ViecLamViewModel model)
+        {
+            if (!ModelState.IsValid || model.NgayHetHan <= model.NgayTao)
+            {
+                if (model.NgayHetHan <= model.NgayTao)
+                {
+                    ModelState.AddModelError("NgayHetHan", "Ngày hết hạn phải lớn hơn ngày tạo");
+                    return View(model);
+                }
+            }
+            var viecLam = new ViecLam
+            {
+                TieuDe = model.TieuDe,
+                MoTa = model.MoTa,
+                MucLuong = model.MucLuong,
+                NgayTao = model.NgayTao,
+                NgayHetHan = model.NgayHetHan,
+                TrangThai = Convert.ToBoolean(model.TrangThai)
+            };
+            await _viecLamDAO.Save(viecLam);
+
+            return RedirectToAction("QuanLyViecLam");
         }
 
 

@@ -10,17 +10,17 @@ namespace QuanLyTuyenDung.Models
         [Key, Column("iMaTaiKhoan"), DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaTaiKhoan { get; set; }
 
-        [Column("sTaiKhoan"), Required, StringLength(50)]
+       // [Column("sTaiKhoan"), Required, StringLength(50)]
         public string TenTaiKhoan { get; set; }
 
-        [Column("sMatKhau"), Required, StringLength(50)]
+       // [Column("sMatKhau"), Required, StringLength(50)]
         public string MatKhau { get; set; }
 
         public NguoiDung NguoiDung { get; set; }
 
         public int iMaQuyen { get; set; }
 
-        [ForeignKey("iMaQuyen"), Required]
+      //  [ForeignKey("iMaQuyen"), Required]
         public QuyenHan QuyenHan { get; set; }
 
     }

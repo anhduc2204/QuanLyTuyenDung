@@ -14,8 +14,8 @@ namespace QuanLyTuyenDung.Models
             Configuration = configuration;
         }
 
-        public DbSet<NguoiDung> DSNguoiDung { get; set; }
-        public DbSet<TaiKhoan> DSTaiKhoan { get; set; }
+        public DbSet<NguoiDung> tbl_NguoiDung { get; set; }
+        public DbSet<TaiKhoan> tbl_TaiKhoan { get; set; }
         public DbSet<QuyenHan> DSQuyen {  get; set; }
         public DbSet<ViecLam> DSViecLam { get; set; }
         public DbSet<DonUngTuyen> DSDonUT { get; set; }

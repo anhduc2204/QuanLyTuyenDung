@@ -2058,19 +2058,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+      "projectUniqueName": "E:\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
       "projectName": "QuanLyTuyenDung",
-      "projectPath": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
+      "projectPath": "E:\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "E:\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

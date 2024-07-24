@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\image\\TrangChu.png",
+      "PackagePath": "staticwebassets\\image\\TrangChu.png"
+    },
+    {
+      "Id": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\image\\VNG_DangKy.jpg",
+      "PackagePath": "staticwebassets\\image\\VNG_DangKy.jpg"
+    },
+    {
       "Id": "D:\\nhập môn cnpm\\Source\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

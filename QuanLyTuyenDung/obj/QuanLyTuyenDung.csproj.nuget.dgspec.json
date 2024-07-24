@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nam 4\\HK 1\\Nhap Mon CNPM\\Project\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
+    "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {}
   },
   "projects": {
-    "D:\\Nam 4\\HK 1\\Nhap Mon CNPM\\Project\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
+    "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nam 4\\HK 1\\Nhap Mon CNPM\\Project\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "projectUniqueName": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
         "projectName": "QuanLyTuyenDung",
-        "projectPath": "D:\\Nam 4\\HK 1\\Nhap Mon CNPM\\Project\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Nam 4\\HK 1\\Nhap Mon CNPM\\Project\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
+        "projectPath": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\QuanLyTuyenDung.csproj",
+        "packagesPath": "C:\\Users\\ACER NITRO\\.nuget\\packages\\",
+        "outputPath": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER NITRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,12 +35,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.31, )"
@@ -60,6 +70,10 @@
               "target": "Package",
               "version": "[6.0.31, )"
             },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
@@ -79,19 +93,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.32, 6.0.32]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.32, 6.0.32]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.32, 6.0.32]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.22, 6.0.22]"
+              "version": "[6.0.32, 6.0.32]"
             }
           ],
           "frameworkReferences": {
@@ -102,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

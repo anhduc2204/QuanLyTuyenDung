@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = QuanLyTuyenDung
 build_property.RootNamespace = QuanLyTuyenDung
-build_property.ProjectDir = D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\
+build_property.ProjectDir = D:\File Học\Năm2023-2024\HocKy-3\Nhập môn CNPM\1\QuanLyTuyenDung\QuanLyTuyenDung\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung
+build_property.MSBuildProjectDirectory = D:\File Học\Năm2023-2024\HocKy-3\Nhập môn CNPM\1\QuanLyTuyenDung\QuanLyTuyenDung
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/Home/Index.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cTG9naW4uY3NodG1s
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cUmVnaXN0ZXIuY3NodG1s
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/DonUngTuyen.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/DonUngTuyen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXERvblVuZ1R1eWVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/Index.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/QuanLyViecLam.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/QuanLyViecLam.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFF1YW5MeVZpZWNMYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ThemViecLam.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ThemViecLam.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFRoZW1WaWVjTGFtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/UngTuyen/Index.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/UngTuyen/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5nVHV5ZW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/UngTuyen/UngTuyen.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/UngTuyen/UngTuyen.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5nVHV5ZW5cVW5nVHV5ZW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/_ViewImports.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/_ViewStart.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/Shared/_Layout.cshtml]
+[D:/File Học/Năm2023-2024/HocKy-3/Nhập môn CNPM/1/QuanLyTuyenDung/QuanLyTuyenDung/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5tnws8w2cg

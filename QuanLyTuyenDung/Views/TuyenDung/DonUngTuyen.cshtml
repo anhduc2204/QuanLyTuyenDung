@@ -19,19 +19,23 @@
             border-color: #e65c00; /* Màu viền khi hover */
             color: #fff; /* Màu chữ trắng khi hover */
         }
+
+    .bold{
+        font-weight: bold;
+    }
 </style>
 
 <main class="py-4">
     <section class="job-list">
         <div class="container">
-            <h1 class="text-center mb-4">Quản lý ứng tuyển cho từng việc làm</h1>
-            <p>Tuyển dụng: </p>
-            <p>Mô tả:</p>
-            <span>Mức lương: </span>
+            <h1 class="text-center mb-5">Quản lý đơn ứng tuyển cho từng việc làm</h1>
+            <span class="bold">Tuyển dụng: </span><span>@Model.TieuDe</span>
+            <p class="bold">Mô tả:</p>
+            <p class="ms-4">@Html.Raw(Model.MoTa.Replace("\r\n", "<br/>"))</p>
+            <span class="bold">Mức lương: </span><span>@Model.MucLuong</span>
 
-
-            <div class="create-job text-center mb-4">
-                <p>Danh sách ứng tuyển</p>
+            <div class="create-job text-center mb-4 mt-4">
+                <h3 class="bold">Danh sách ứng tuyển</h3>
             </div>
 
             <table class="table">
@@ -46,7 +50,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    @foreach (var ungtuyen in Model.UngTuyenViews)
+                    {
+                        <tr>
+                            <td>@stt</td>
+                            <td>@ungtuyen.HoTen</td>
+                            <td>@ungtuyen.Email</td>
+                            <td>@ungtuyen.SDT</td>
+                            <td>@ungtuyen.NgaySinh.Value.ToString("dd/MM/yyyy")</td>
+                            <td>@Html.Raw(ungtuyen.MoTa.Replace("\r\n", "<br/>"))</td>
+                            <td>
+                                <a href="@Url.Action("ThongBao", "TuyenDung",
+                                    new { id_nd = ungtuyen.MaND })"
+                                   class="btn btn-custom m2-2">Gửi thông báo</a>
+                            </td>
+                        </tr>
+                        stt++;
+                    }
                 </tbody>
             </table>
         </div>

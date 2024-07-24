@@ -24,10 +24,15 @@
 
   <ItemGroup>
     <Folder Include="Utils\" />
+<<<<<<< Updated upstream
 	<Folder Include="Views\TaiKhoan\" />
     <Folder Include="Views\TuyenDung\" />
     <Folder Include="Views\UngTuyen\" />
 	<Folder Include="Views\TaiKhoan\" />
+=======
+    <Folder Include="Views\TuyenDung\" />
+    <Folder Include="Views\UngTuyen\" />
+>>>>>>> Stashed changes
   </ItemGroup>
 
 </Project>

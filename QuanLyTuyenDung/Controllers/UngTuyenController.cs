@@ -79,5 +79,19 @@ namespace QuanLyTuyenDung.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        [Route("UngTuyen/TimKiem")]
+        public async Task<IActionResult> TimKiem([FromQuery] String keySearch)
+        {
+            if (string.IsNullOrWhiteSpace(keySearch)) // nếu chuỗi null hoặc trống
+            {
+                var dsALL = await _ViecLamDAO.GetAll();
+                return View("Index", dsALL);
+            }
+
+            var dsViecLam = await _ViecLamDAO.TimKiem(keySearch.Trim());
+            return View("Index", dsViecLam);
+        }
+
     }
 }

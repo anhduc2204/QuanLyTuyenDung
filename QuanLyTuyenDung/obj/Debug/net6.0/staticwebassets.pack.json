@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\image\\TrangChu.png",
+      "PackagePath": "staticwebassets\\image\\TrangChu.png"
+    },
+    {
+      "Id": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\image\\VNG_DangKy.jpg",
+      "PackagePath": "staticwebassets\\image\\VNG_DangKy.jpg"
+    },
+    {
       "Id": "D:\\File Học\\Năm2023-2024\\HocKy-3\\Nhập môn CNPM\\1\\QuanLyTuyenDung\\QuanLyTuyenDung\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

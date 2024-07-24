@@ -3,8 +3,8 @@ using QuanLyTuyenDung.Models;
 
 namespace QuanLyTuyenDung.DAO
 {
-	public class NguoiDungDAO
-	{
+    public class NguoiDungDAO
+    {
         private readonly DataContext _dataContext;
 
         public NguoiDungDAO(DataContext dataContext)
@@ -44,5 +44,6 @@ namespace QuanLyTuyenDung.DAO
             _dataContext.SaveChanges();
             return nd.Entity;
         }
+
     }
 }

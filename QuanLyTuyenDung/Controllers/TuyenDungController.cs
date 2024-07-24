@@ -27,29 +27,20 @@ namespace QuanLyTuyenDung.Controllers
         [HttpGet]
         [Route("QuanLyViecLam")]
         [Route("")]
-
         public async Task<IActionResult> QuanLyViecLam()
         {
-            //var ndjson = HttpContext.Session.GetString("NguoiDung");
+			var ndjson = HttpContext.Session.GetString("NguoiDung");
 
-            //if (ndjson == null)
-            //{
-            //    return RedirectToAction("Login", "TaiKhoan");
-            //}
-
-            NguoiDung nd = new NguoiDung { Email = "thang@gmail.com", MaND = 1, iMaTaiKhoan = 2, GioiTinh="Nam",NgaySinh=DateTime.Now};
-            var ndJson = JsonConvert.SerializeObject(nd, Formatting.None,
-                                        new JsonSerializerSettings()
-                                        {
-                                            ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                                        });
-            var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndJson);
-            //var quyen = HttpContext.Session.GetString("QuyenHan");
-            //if (quyen == null || !quyen.Equals("Admin"))
-            //{
-            //    return RedirectToAction("Index", "Home");
-            //}
-            var dsViecLam = await _viecLamDAO.GetAll();
+			if (ndjson == null)
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			var quyenHan = HttpContext.Session.GetString("QuyenHan");
+			if (quyenHan == null || !quyenHan.Equals("Admin"))
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			var dsViecLam = await _viecLamDAO.GetAll();
             return View(dsViecLam);
         }
 
@@ -59,14 +50,39 @@ namespace QuanLyTuyenDung.Controllers
         [Route("ThemViecLam")]
         public IActionResult ThemViecLam()
         {
-            return View();
+			var ndjson = HttpContext.Session.GetString("NguoiDung");
+
+			if (ndjson == null)
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			var quyenHan = HttpContext.Session.GetString("QuyenHan");
+			if (quyenHan == null || !quyenHan.Equals("Admin"))
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			return View();
         }
 
         [HttpPost]
         [Route("ThemViecLam")]
         public async Task<IActionResult> ThemViecLam(ViecLamViewModel model)
         {
-            if (!ModelState.IsValid || model.NgayHetHan <= model.NgayTao)
+
+			var ndjson = HttpContext.Session.GetString("NguoiDung");
+
+			if (ndjson == null)
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			var quyenHan = HttpContext.Session.GetString("QuyenHan");
+			if (quyenHan == null || !quyenHan.Equals("Admin"))
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+
+
+			if (!ModelState.IsValid || model.NgayHetHan <= model.NgayTao)
             {
                 if (model.NgayHetHan <= model.NgayTao)
                 {
@@ -91,11 +107,104 @@ namespace QuanLyTuyenDung.Controllers
 
         [HttpGet]
         [Route("DonUngTuyen/{id_vieclam}")]
-        public IActionResult DonUngTuyen(int id_vieclam)
+        public async Task<IActionResult> DonUngTuyen(int id_vieclam)
         {
-            return View();
+            var ndjson = HttpContext.Session.GetString("NguoiDung");
+
+            if (ndjson == null)
+            {
+                return RedirectToAction("Login", "TaiKhoan");
+            }
+            var quyenHan = HttpContext.Session.GetString("QuyenHan");
+			if (quyenHan == null || !quyenHan.Equals("Admin"))
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+
+			List<DonUngTuyen> DSDon = _ungTuyenDAO.getDonByMaViecLam(id_vieclam);
+            ViecLam viecLam = await _viecLamDAO.GetByID(id_vieclam);
+            List<UngTuyenViewModel> _UngTuyenViews = new List<UngTuyenViewModel>();
+            foreach (DonUngTuyen don in DSDon)
+            {
+                var ungTuyenView = new UngTuyenViewModel
+                {
+                    HoTen = don.NguoiDung.TenND,
+                    Email = don.NguoiDung.Email,
+                    SDT = don.NguoiDung.SDT,
+                    NgaySinh = don.NguoiDung.NgaySinh,
+                    MoTa = don.MoTa,
+                    MaND = don.iMaND
+
+                };
+                _UngTuyenViews.Add(ungTuyenView);
+
+            }
+            QuanLyUngTuyenViewModel model = new QuanLyUngTuyenViewModel
+            {
+                TieuDe = viecLam.TieuDe,
+                MoTa = viecLam.MoTa,
+                MucLuong = viecLam.MucLuong,
+                UngTuyenViews = _UngTuyenViews
+            };
+
+            return View(model);
         }
 
+		[HttpGet]
+		[Route("ThongBao/{id_nd}")]
+		public async Task<IActionResult> ThongBao(int id_nd)
+		{
+			var ndjson = HttpContext.Session.GetString("NguoiDung");
+			if (ndjson == null)
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
+			var quyenHan = HttpContext.Session.GetString("QuyenHan");
+			if (quyenHan == null || !quyenHan.Equals("Admin"))
+				if (quyenHan == null || !quyenHan.Equals("Admin"))
+			{
+				return RedirectToAction("Login", "TaiKhoan");
+			}
 
-    }
+			NguoiDung nd = await _nguoiDungDAO.GetByID(id_nd);
+			ThongBaoViewModel model = new ThongBaoViewModel();
+			model.ToEmail = nd.Email;
+			ViewBag.id_nd = id_nd;
+			return View(model);
+		}
+
+		[HttpPost]
+		[Route("ThongBao/{id_nd}")]
+		public async Task<IActionResult> ThongBao(int id_nd, ThongBaoViewModel model)
+		{
+			ViewBag.id_nd = id_nd;
+			if (!ModelState.IsValid)
+			{
+                if(string.IsNullOrWhiteSpace(model.Subject))
+                {
+                    ModelState.AddModelError("Subject", "Không được bỏ trống");
+                }
+				if (string.IsNullOrWhiteSpace(model.Message))
+				{
+					ModelState.AddModelError("Message", "Không được bỏ trống");
+				}
+
+				return View(model);
+			}
+
+			int check = await Utils.MailUtil.GuiThongBao(model.ToEmail.Trim(), model.Subject.Trim(), model.Message.Trim());
+			ViewBag.MessageCode = check;
+			if (check == 1)
+			{
+				ViewBag.Message = "Gửi thành công";
+			}
+			else
+			{
+				ViewBag.Message = "Gửi thất bại";
+			}
+			return View(model);
+		}
+
+
+	}
 }

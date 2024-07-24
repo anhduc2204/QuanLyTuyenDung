@@ -23,8 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Utils\" />
-    <Folder Include="Views\TuyenDung\" />
     <Folder Include="Views\UngTuyen\" />
   </ItemGroup>
 

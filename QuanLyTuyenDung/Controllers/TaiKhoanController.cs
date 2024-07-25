@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using QuanLyTuyenDung.DAO;
 using Newtonsoft.Json;
+using QuanLyTuyenDung.DAO;
 using QuanLyTuyenDung.Models.ViewModels;
 using QuanLyTuyenDung.Models;
 
@@ -59,7 +59,6 @@ namespace QuanLyTuyenDung.Controllers
             ViewBag.Message = "Tài khoản hoặc mật khẩu không chính xác";
             return View(loginViewModel);
 
-
         }
 
         [HttpGet]
@@ -75,7 +74,9 @@ namespace QuanLyTuyenDung.Controllers
             string email = registerViewModel.Email.Trim();
             string matKhau = registerViewModel.MatKhau.Trim();
 
-            if (!ModelState.IsValid || !XacThucEmail(email))
+            Boolean checkEmail = await XacThucEmail(email);
+
+            if (!ModelState.IsValid || !checkEmail)
             {
                 ModelState.AddModelError("Email", "Email đã tồn tại");
                 return View(registerViewModel);
@@ -119,31 +120,178 @@ namespace QuanLyTuyenDung.Controllers
 
         }
 
-        public Boolean XacThucEmail(string email)
+        [HttpGet]
+        public async Task<IActionResult> ThongTinTaiKhoan()
         {
-            if (_TaiKhoanDAO.getByEmail(email) != null)
+            //Kiểm tra xem có người dùng nào đăng nhập không
+            var ndjson = HttpContext.Session.GetString("NguoiDung");
+            if (ndjson == null)
+            {
+                return RedirectToAction("Login", "TaiKhoan");
+            }
+            // có đăng nhập: lấy ra nguoiDung (ở dạng Json), convert sang thành đối tượng NguoiDung
+            var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
+
+            TaiKhoan taiKhoan = await _TaiKhoanDAO.getByEmail(nguoiDung.Email);
+
+            return View(taiKhoan);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CapNhatTaiKhoan(TaiKhoan taiKhoanNew)
+        {
+            //Kiểm tra xem có người dùng nào đăng nhập không
+            var ndjson = HttpContext.Session.GetString("NguoiDung");
+            if (ndjson == null)
+            {
+                return RedirectToAction("Login", "TaiKhoan");
+            }
+
+            //Kiểm tra tài khoản và mật khẩu gửi đến
+            if (string.IsNullOrWhiteSpace(taiKhoanNew.TenTaiKhoan))
+            {
+                ModelState.AddModelError("TenTaiKhoan", "Không được để trống");
+            }
+            if (string.IsNullOrWhiteSpace(taiKhoanNew.TenTaiKhoan))
+            {
+                ModelState.AddModelError("MatKhau", "Không được để trống");
+            }
+
+            //lấy người dùng ở Session
+            var nguoiDung_Session = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
+
+            int check = 0;
+            //cập nhật tài khoản
+            var taiKhoan = await _TaiKhoanDAO.getByEmail(nguoiDung_Session.Email); // lấy tài khoản cũ lên
+            taiKhoan.TenTaiKhoan = taiKhoanNew.TenTaiKhoan.Trim(); // đổi email
+            taiKhoan.MatKhau = taiKhoanNew.MatKhau.Trim(); // đổi mật khẩu
+            var tk = _TaiKhoanDAO.Update(taiKhoan); // thực hiện cập nhật
+
+            if (tk != null)
+            {
+                // đồng thời cập nhật lại email ở NguoiDung
+                var nguoiDung = await _NDdao.GetByID(nguoiDung_Session.MaND);
+                nguoiDung.Email = tk.TenTaiKhoan;
+                nguoiDung.TaiKhoan = tk;
+                var nd = _NDdao.Update(nguoiDung);
+
+                if (nd != null)
+                {
+                    //cập nhật đối tượng người dùng mới trong Session
+                    HttpContext.Session.Clear();
+                    var ndJson_New = JsonConvert.SerializeObject(nd, Formatting.None,
+                                                new JsonSerializerSettings()
+                                                {
+                                                    ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                                                });
+                    HttpContext.Session.SetString("NguoiDung", ndJson_New);
+                    HttpContext.Session.SetString("QuyenHan", tk.QuyenHan.TenQuyen);
+                    check = 1;
+                }
+                else
+                {
+                    check = 0;
+                }
+            }
+
+            ViewBag.MessageCode = check;
+            if (check == 1)
+            {
+                ViewBag.Message = "Cập nhật thành công";
+                return View("ThongTinTaiKhoan", taiKhoan);
+            }
+
+            ViewBag.Message = "Cập nhật thất bại";
+            return View("ThongTinTaiKhoan", taiKhoan);
+
+        }
+
+
+        [HttpGet]
+        public IActionResult ThongTinCaNhan()
+        {
+            //Kiểm tra xem có người dùng nào đăng nhập không
+            var ndjson = HttpContext.Session.GetString("NguoiDung");
+            if (ndjson == null)
+            {
+                return RedirectToAction("Login", "TaiKhoan");
+            }
+            // có đăng nhập: lấy ra nguoiDung (ở dạng Json), convert sang thành đối tượng NguoiDung
+            var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
+            return View(nguoiDung);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CapNhatThongTinCaNhan(NguoiDung nguoiDung_New)
+        {
+            //Kiểm tra xem có người dùng nào đăng nhập không
+            var ndjson = HttpContext.Session.GetString("NguoiDung");
+            if (ndjson == null)
+            {
+                return RedirectToAction("Login", "TaiKhoan");
+            }
+            // có đăng nhập: lấy ra nguoiDung (ở dạng Json), convert sang thành đối tượng NguoiDung
+            var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
+            nguoiDung.TenND = nguoiDung_New.TenND;
+            nguoiDung.Email = nguoiDung_New.Email;
+            nguoiDung.SDT = nguoiDung_New.SDT;
+            nguoiDung.NgaySinh = nguoiDung_New.NgaySinh;
+            nguoiDung.GioiTinh = nguoiDung_New.GioiTinh;
+
+            int check = 0;
+            // Cập nhật
+            var nd = _NDdao.Update(nguoiDung);
+
+            if (nd != null)
+            {
+
+                //cập nhật đối tượng người dùng mới trong Session
+                HttpContext.Session.Clear();
+                var ndJson_New = JsonConvert.SerializeObject(nd, Formatting.None,
+                                            new JsonSerializerSettings()
+                                            {
+                                                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                                            });
+                HttpContext.Session.SetString("NguoiDung", ndJson_New);
+
+                //Đồng thời cập nhật lại tên tài khoản
+                var taiKhoan = await _TaiKhoanDAO.GetByID(nd.iMaTaiKhoan);
+                taiKhoan.TenTaiKhoan = nd.Email;
+                var tk = _TaiKhoanDAO.Update(taiKhoan);
+
+                if (tk != null)
+                {
+                    check = 1;
+                }
+                else
+                {
+                    check = 0;
+                }
+
+            }
+
+            ViewBag.MessageCode = check;
+            if (check == 1)
+            {
+                ViewBag.Message = "Cập nhật thành công";
+                return View("ThongTinCaNhan", nd);
+            }
+            ViewBag.Message = "Cập nhật không thành công";
+            return View("ThongTinCaNhan", nguoiDung);
+        }
+
+        public async Task<Boolean> XacThucEmail(string email)
+        {
+            TaiKhoan tk = await _TaiKhoanDAO.getByEmail(email);
+            if (tk != null)
             {
                 return false;
             }
             return true;
         }
 
-        public IActionResult CapnhapTK()
-        {
-            /*  var uv = new NguoiDung { MaND = 1, TenND = "trangggggg", Email = "vvvv.com", SDT = "0866104413", NgaySinh = null, iMaTaiKhoan = 1, GioiTinh = "bd" };
-              var tk = new TaiKhoan{MaTaiKhoan=1,TenTaiKhoan="trang", MatKhau="123",NguoiDung=uv,iMaQuyen=1,QuyenHan=null};*/
-
-            return View();
-        }
-        [Route("")]
 
 
-        public IActionResult CapNhapUV()
-        {
-            //  var uv = new NguoiDung {MaND= 1, TenND="trangggggggggggggg",Email="vvvv.com", SDT="0866104413",NgaySinh= null ,iMaTaiKhoan= 1, TaiKhoan=null };
-            var list = _TaiKhoanDAO.LayNguoiDung();
-            var uv = list[0];
-            return View(uv);
-        }
+
     }
 }

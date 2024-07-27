@@ -171,9 +171,20 @@ namespace QuanLyTuyenDung.Controllers
 		}
 
 
-
-
 		[HttpGet]
+		[Route("XoaViecLam/{id_vieclam}")]
+        public async Task<IActionResult> XoaViecLam(int id_vieclam)
+		{
+
+			var viecLam = await _viecLamDAO.GetByID(id_vieclam);
+			_viecLamDAO.Delete(viecLam);	
+			return RedirectToAction("QuanLyViecLam", "TuyenDung");
+		}
+
+
+
+
+        [HttpGet]
 		[Route("DonUngTuyen/{id_vieclam}")]
 		public async Task<IActionResult> DonUngTuyen(int id_vieclam)
 		{

@@ -5,6 +5,7 @@ namespace QuanLyTuyenDung.DAO
 {
     public class TaiKhoanDAO
     {
+
         private readonly DataContext _dataContext;
 
         public TaiKhoanDAO(DataContext dataContext)
@@ -42,7 +43,6 @@ namespace QuanLyTuyenDung.DAO
 
             return tk;
         }
-
 
     }
 }

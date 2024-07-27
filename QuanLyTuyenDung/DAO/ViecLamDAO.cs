@@ -1,8 +1,5 @@
 ﻿using QuanLyTuyenDung.Models;
-<<<<<<< HEAD
-=======
 using Microsoft.EntityFrameworkCore;
->>>>>>> developer
 
 namespace QuanLyTuyenDung.DAO
 {
@@ -15,7 +12,6 @@ namespace QuanLyTuyenDung.DAO
             _dataContext = dataContext;
         }
 
-<<<<<<< HEAD
         public async Task Delete(int id)
         {
             var viecLam = await _dataContext.DSViecLam.FindAsync(id);
@@ -26,8 +22,6 @@ namespace QuanLyTuyenDung.DAO
             }
         }
 
-
-=======
         public async Task<List<ViecLam>> GetAll()
         {
             return await _dataContext.DSViecLam
@@ -55,7 +49,6 @@ namespace QuanLyTuyenDung.DAO
                         .ToListAsync();
 
         }
->>>>>>> developer
     }
 }
  

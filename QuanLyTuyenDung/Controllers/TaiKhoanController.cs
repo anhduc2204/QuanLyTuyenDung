@@ -44,6 +44,7 @@ namespace QuanLyTuyenDung.Controllers
                                             {
                                                 ReferenceLoopHandling = ReferenceLoopHandling.Ignore
                                             });
+                HttpContext.Session.Clear();
                 HttpContext.Session.SetString("NguoiDung", ndJson);
                 HttpContext.Session.SetString("QuyenHan", tk.QuyenHan.TenQuyen);
                 if (tk.QuyenHan.TenQuyen.Equals("Admin"))

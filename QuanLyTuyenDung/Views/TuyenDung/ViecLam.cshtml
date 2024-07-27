@@ -1,12 +1,16 @@
-﻿@model QuanLyTuyenDung.Models.ViewModels.ViecLamViewModel
+﻿
+@model QuanLyTuyenDung.Models.ViewModels.ViecLamViewModel
 
 @{
-    ViewData["Title"] = "Thêm tin tuyển dụng";
+    ViewData["Title"] = "Tin tuyển dụng";
+    string formAction = ViewBag.Action == 1 ? "ThemViecLam" : "CapNhatViecLam";
+    string titleForm = ViewBag.Action == 1 ? "Thêm việc làm mới" : "Cập nhật việc làm";
 }
 
+
 <main>
-    <h1 class="main-title">Thêm việc làm mới</h1>
-    <form asp-action="ThemViecLam" class="job-form">
+    <h1 class="main-title mt-3">@titleForm</h1>
+    <form asp-action="@formAction" asp-route-id_vieclam="@ViewBag.id_vieclam" asp-controller="TuyenDung" method="post" class="job-form">
         
         <div class="form-group">
             <label for="title" class="form-label">Tiêu đề</label>
@@ -39,11 +43,13 @@
             <label for="status" class="form-label">Trạng thái</label>
             <select class="form-select" aria-label="Default select example">
                 <option value="1" selected>Đang tuyển</option>
-                <option value="2">Ngừng tuyển</option>
+                <option value="0">Ngừng tuyển</option>
             </select>
         </div>
-        <div class="submit-container">
-            <button type="submit" class="submit-button">Thêm mới</button>
+        <div class="text-center mt-2 mb-4">
+            <button type="submit" class="btn btn-danger">Xác nhận</button>
+            <br>
+            <span class="mt-2 @(ViewBag.MessageCode == 0 ? "text-danger" : "text-primary")">@ViewBag.Message</span>
         </div>
     </form>
 </main>

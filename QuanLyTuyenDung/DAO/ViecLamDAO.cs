@@ -12,6 +12,23 @@ namespace QuanLyTuyenDung.DAO
             _dataContext = dataContext;
         }
 
+        public async Task Delete(int id)
+        {
+            var viecLam = await _dataContext.DSViecLam.FindAsync(id);
+            if (viecLam != null)
+            {
+                _dataContext.DSViecLam.Remove(viecLam);
+                await _dataContext.SaveChangesAsync();
+            }
+        }
+
+        public ViecLam Update(ViecLam updatedViecLam)
+        {
+                var vl = _dataContext.DSViecLam.Update(updatedViecLam);
+                _dataContext.SaveChanges();
+                return vl.Entity;
+            
+        }
         public async Task<List<ViecLam>> GetAll()
         {
             return await _dataContext.DSViecLam

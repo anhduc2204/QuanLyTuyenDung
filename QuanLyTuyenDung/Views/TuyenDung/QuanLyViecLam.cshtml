@@ -40,7 +40,9 @@
                             <td>@vieclam.TieuDe</td>
                             <td>@vieclam.MucLuong</td>
                             <td>
-                                <a href="#" class="btn btn-custom m2-2">Sửa</a>
+                                <a href="@Url.Action("CapNhatViecLam", "TuyenDung", 
+                                    new {id_vieclam = vieclam.MaViecLam})"
+                                   class="btn btn-custom m2-2">Sửa</a>
                                 <a href="#" class="btn btn-custom me-2">Xóa</a>
                             </td>
                             <td>

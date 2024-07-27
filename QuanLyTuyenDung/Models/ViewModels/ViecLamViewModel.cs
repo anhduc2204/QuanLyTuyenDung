@@ -5,6 +5,8 @@ namespace QuanLyTuyenDung.Models.ViewModels
 {
     public class ViecLamViewModel
     {
+        public int MaViecLam;
+
         [Required(ErrorMessage = "Không được bỏ trống")]
         public string TieuDe { get; set; }
 

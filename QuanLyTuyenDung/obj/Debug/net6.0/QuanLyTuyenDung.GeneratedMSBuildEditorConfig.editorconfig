@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/Admin/QuanLyViecLam.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUXVhbkx5VmllY0xhbS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,12 +38,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFF1YW5MeVZpZWNMYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ThemViecLam.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFRoZW1WaWVjTGFtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ThongBao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFRob25nQmFvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/ViecLam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV5ZW5EdW5nXFZpZWNMYW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/UngTuyen/Index.cshtml]

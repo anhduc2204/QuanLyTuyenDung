@@ -52,7 +52,7 @@
                             {
                                 var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
                                 <a class="btn btn-primary me-2" href="#" role="button">@nguoiDung.TenND</a>
-                                <a class="btn btn-primary me-2" href="TaiKhoan/Logout" role="button">Logout</a>
+                                <a class="btn btn-primary me-2" href="@Url.Action("Logout", "TaiKhoan")" role ="button" >Logout</a>
                             }
                             else
                             {

@@ -12,14 +12,10 @@ namespace QuanLyTuyenDung.DAO
             _dataContext = dataContext;
         }
 
-        public async Task Delete(int id)
+        public void Delete(ViecLam viecLam)
         {
-            var viecLam = await _dataContext.DSViecLam.FindAsync(id);
-            if (viecLam != null)
-            {
-                _dataContext.DSViecLam.Remove(viecLam);
-                await _dataContext.SaveChangesAsync();
-            }
+            _dataContext.DSViecLam.Remove(viecLam);
+            _dataContext.SaveChanges();
         }
 
         public async Task<List<ViecLam>> GetAll()
@@ -40,6 +36,14 @@ namespace QuanLyTuyenDung.DAO
         {
             return await _dataContext.DSViecLam.FindAsync(id);
 
+        }
+
+        public ViecLam Update(ViecLam updatedViecLam)
+        {
+                var vl = _dataContext.DSViecLam.Update(updatedViecLam);
+                _dataContext.SaveChanges();
+                return vl.Entity;
+            
         }
 
         public async Task<List<ViecLam>> TimKiem(String searchString)

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace QLTuyenDung.Views.Admin
+namespace QuanLyTuyenDung.Views.TuyenDung
 {
     public class ThemViecLamModel : PageModel
     {

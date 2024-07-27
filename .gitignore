@@ -1,1 +1,7 @@
 .vs/
+
+obj/
+
+# Bỏ qua file cấu hình của hệ thống
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.csproj.CoreCompileInputs.cache

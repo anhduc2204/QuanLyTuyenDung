@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuanLyTuyenDung")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27a0cfe38b864ca0e1ffd41246e5be375a786334")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0469adc993c076e4dd944e9ede64b698c5008732")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuanLyTuyenDung")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuanLyTuyenDung")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

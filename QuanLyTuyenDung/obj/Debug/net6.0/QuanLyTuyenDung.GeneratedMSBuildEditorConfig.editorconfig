@@ -22,12 +22,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/CapnhapTK.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cQ2FwbmhhcFRLLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/CapNhapUV.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cQ2FwTmhhcFVWLmNzaHRtbA==
+[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/Login.cshtml]
@@ -36,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/ThongTinCaNhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cVGhvbmdUaW5DYU5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TaiKhoan/ThongTinTaiKhoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpS2hvYW5cVGhvbmdUaW5UYWlLaG9hbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/nhập môn cnpm/Source/QuanLyTuyenDung/QuanLyTuyenDung/Views/TuyenDung/DonUngTuyen.cshtml]

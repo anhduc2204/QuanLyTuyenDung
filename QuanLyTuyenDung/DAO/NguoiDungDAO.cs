@@ -37,7 +37,6 @@ namespace QuanLyTuyenDung.DAO
             return nd.Entity;
         }
 
-
         public NguoiDung Update(NguoiDung nguoiDung)
         {
             var nd = _dataContext.DSNguoiDung.Update(nguoiDung);

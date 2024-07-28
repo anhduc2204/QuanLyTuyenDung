@@ -34,8 +34,8 @@
                                         Tài khoản
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
-                                        <li><a class="dropdown-item" href="#">Thông tin cá nhân</a></li>
+                                        <li><a class="dropdown-item" href="@Url.Action("ThongTinTaiKhoan", "TaiKhoan")">Thông tin tài khoản</a></li>
+                                        <li><a class="dropdown-item" href="@Url.Action("ThongTinCaNhan", "TaiKhoan")">Thông tin cá nhân</a></li>
 
                                     </ul>
                                 </li>
@@ -52,7 +52,7 @@
                             {
                                 var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
                                 <a class="btn btn-primary me-2" href="#" role="button">@nguoiDung.TenND</a>
-                                <a class="btn btn-primary me-2" href="TaiKhoan/Logout" role="button">Logout</a>
+                                <a class="btn btn-primary me-2" href="@Url.Action("Logout", "TaiKhoan")" role ="button" >Logout</a>
                             }
                             else
                             {

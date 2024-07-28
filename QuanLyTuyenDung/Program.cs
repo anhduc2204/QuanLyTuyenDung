@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using QuanLyTuyenDung.DAO;
 using QuanLyTuyenDung.Models;
-using QuanLyTuyenDung.DAO;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,7 +32,7 @@ var app = builder.Build();
 /*if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-}*/
+}
 
 
 /*app.UseHttpsRedirection();*/

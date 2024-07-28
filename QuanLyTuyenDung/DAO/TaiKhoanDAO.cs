@@ -73,7 +73,7 @@ namespace QuanLyTuyenDung.DAO
 
         public async Task<TaiKhoan> getByUserNameAndPassWord(string taiKhoan, string matKhau)
         {
-            var tk = await _dataContext.tbl_TaiKhoan
+            var tk = await _dataContext.DSTaiKhoan
                                         .Include(t => t.NguoiDung)
                                         .Include(t => t.QuyenHan)
                                         .FirstOrDefaultAsync(t => t.TenTaiKhoan == taiKhoan && t.MatKhau == matKhau);
@@ -83,14 +83,14 @@ namespace QuanLyTuyenDung.DAO
 
         public async Task<TaiKhoan> Save(TaiKhoan taiKhoan)
         {
-            var tk = await _dataContext.tbl_TaiKhoan.AddAsync(taiKhoan);
+            var tk = await _dataContext.DSTaiKhoan.AddAsync(taiKhoan);
             await _dataContext.SaveChangesAsync();
             return tk.Entity;
         }
 
         public async Task<TaiKhoan> getByEmail(string email)
         {
-            var tk = await _dataContext.tbl_TaiKhoan
+            var tk = await _dataContext.DSTaiKhoan
                                         .FirstOrDefaultAsync(t => t.TenTaiKhoan == email);
 
             return tk;
@@ -98,7 +98,7 @@ namespace QuanLyTuyenDung.DAO
 
         public List<NguoiDung> LayNguoiDung()
         {
-            List<NguoiDung> list = _dataContext.tbl_NguoiDung.ToList();
+            List<NguoiDung> list = _dataContext.DSNguoiDung.ToList();
             return list;
         }
     }

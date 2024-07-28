@@ -135,8 +135,8 @@ namespace QuanLyTuyenDung.Controllers
 
             return View();
         }
-        [Route("")]
 
+        [Route("")]
         public IActionResult CapNhapUV()
         {
             //  var uv = new NguoiDung {MaND= 1, TenND="trangggggggggggggg",Email="vvvv.com", SDT="0866104413",NgaySinh= null ,iMaTaiKhoan= 1, TaiKhoan=null };
@@ -145,4 +145,5 @@ namespace QuanLyTuyenDung.Controllers
             return View(uv);
         }
     }
+    
 }

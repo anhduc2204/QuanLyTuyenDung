@@ -1,0 +1,58 @@
+﻿
+@model QuanLyTuyenDung.Models.ViewModels.ViecLamViewModel
+
+@{
+    ViewData["Title"] = "Tin tuyển dụng";
+    string formAction = ViewBag.Action == 1 ? "ThemViecLam" : "CapNhatViecLam";
+    string titleForm = ViewBag.Action == 1 ? "Thêm việc làm mới" : "Cập nhật việc làm";
+}
+
+
+<main>
+    <h1 class="main-title mt-3">@titleForm</h1>
+    <form asp-action="@formAction" asp-route-id_vieclam="@ViewBag.id_vieclam" asp-controller="TuyenDung" method="post" class="job-form">
+        
+        <div class="form-group">
+            <label for="title" class="form-label">Tiêu đề</label>
+            <input id="title" asp-for="TieuDe" class="form-input" placeholder="Tiêu đề">
+            <span asp-validation-for="TieuDe" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="salary" class="form-label">Mức lương</label>
+            <input type="text" id="salary" asp-for="MucLuong" class="form-input" placeholder="Mức lương">
+            <span asp-validation-for="MucLuong" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="create-date" class="form-label">Ngày tạo</label>
+            <input type="date" id="create-date" asp-for="NgayTao" class="form-input" placeholder="Ngày tạo">
+            <span asp-validation-for="NgayTao" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="end-date" class="form-label">Ngày hết hạn</label>
+            <input type="date" id="end-date" asp-for="NgayHetHan" class="form-input" placeholder="Ngày hết hạn">
+            <span asp-validation-for="NgayHetHan" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="description" class="form-label">Mô tả</label>
+            <textarea id="description" asp-for="MoTa" class="form-textarea" placeholder="Mô tả"></textarea>
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="status" class="form-label">Trạng thái</label>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1" selected>Đang tuyển</option>
+                <option value="0">Ngừng tuyển</option>
+            </select>
+        </div>
+        <div class="text-center mt-2 mb-4">
+            <button type="submit" class="btn btn-danger">Xác nhận</button>
+            <br>
+            <span class="mt-2 @(ViewBag.MessageCode == 0 ? "text-danger" : "text-primary")">@ViewBag.Message</span>
+        </div>
+    </form>
+</main>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

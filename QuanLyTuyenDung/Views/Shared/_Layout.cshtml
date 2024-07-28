@@ -3,7 +3,7 @@
 <!DOCTYPE html
 <html>
 <head>
-    <title>@ViewData["Title"] - My ASP.NET Application</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/layout.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
@@ -26,7 +26,7 @@
                             {
 
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="@Url.Action("Index","TuyenDung")">Tuyển dụng</a>
+                                    <a class="nav-link active" aria-current="page" href="@Url.Action("Index","UngTuyen")">Tuyển dụng</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -52,7 +52,7 @@
                             {
                                 var nguoiDung = JsonConvert.DeserializeObject<NguoiDung>(ndjson);
                                 <a class="btn btn-primary me-2" href="#" role="button">@nguoiDung.TenND</a>
-                                <a class="btn btn-primary me-2" href="TaiKhoan/Logout" role="button">Logout</a>
+                                <a class="btn btn-primary me-2" href="@Url.Action("Logout", "TaiKhoan")" role ="button" >Logout</a>
                             }
                             else
                             {

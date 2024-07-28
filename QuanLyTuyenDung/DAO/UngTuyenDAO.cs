@@ -1,10 +1,10 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore;
 using QuanLyTuyenDung.Models;
 
-/*namespace QuanLyTuyenDung.DAO
+namespace QuanLyTuyenDung.DAO
 {
-    public class UngTuyenDAO
-    {
+	public class UngTuyenDAO
+	{
         DataContext _dataContext;
         public UngTuyenDAO(DataContext dataContext)
         {
@@ -18,29 +18,13 @@ using QuanLyTuyenDung.Models;
             return don.Entity;
         }
 
-
-    }
-}
-*/
-
-using QuanLyTuyenDung.Models;
-
-namespace QuanLyTuyenDung.DAO
-{
-    public class UngTuyenDAO
-    {
-        private readonly DataContext _dataContext;
-
-        public UngTuyenDAO(DataContext dataContext)
+        public List<DonUngTuyen> getDonByMaViecLam(int maViecLam)
         {
-            _dataContext = dataContext;
-        }
-
-        public async Task<DonUngTuyen> UngTuyen(DonUngTuyen donUT)
-        {
-            var don = await _dataContext.DSDonUT.AddAsync(donUT);
-            await _dataContext.SaveChangesAsync();
-            return don.Entity;
+            var list = _dataContext.DSDonUT
+            .Include(d => d.NguoiDung)
+            .Where(d => d.iMaViecLam == maViecLam)
+            .ToList();
+            return list;
         }
     }
 }

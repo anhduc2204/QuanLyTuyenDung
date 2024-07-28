@@ -138,3 +138,8 @@ E:\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\scopedcss\projectbundle\Quan
 E:\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTu.7DD2FB19.Up2Date
 E:\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\QuanLyTuyenDung.genruntimeconfig.cache
 E:\QuanLyTuyenDung\QuanLyTuyenDung\obj\Debug\net6.0\ref\QuanLyTuyenDung.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\nhập môn cnpm\Source\QuanLyTuyenDung\QuanLyTuyenDung\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
